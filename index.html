@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AI Agent Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartShop AI Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 1em; text-align: center; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 2em; }
+    .product { background: #fff; border: 1px solid #ccc; margin: 1em; padding: 1em; width: 200px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width: 100%; height: auto; }
+    footer { background: #333; color: #fff; text-align: center; padding: 1em; position: fixed; bottom: 0; width: 100%; }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My AI Agent Demo</h1>
-  <p>This is a simple webpage hosted on GitHub Pages.</p>
+  <header>
+    <h1>SmartShop AI Demo</h1>
+    <p>Explore products and chat with our AI assistant</p>
+  </header>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Shoes" alt="Shoes" />
+      <h3>Running Shoes</h3>
+      <p>₹2,499</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Headphones" alt="Headphones" />
+      <h3>Wireless Headphones</h3>
+      <p>₹3,999</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Backpack" alt="Backpack" />
+      <h3>Travel Backpack</h3>
+      <p>₹1,799</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 SmartShop. All rights reserved.
+  </footer>
+
+  <!-- Botpress Webchat Embed -->
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      botId: "YOUR_BOT_ID",
+      hostUrl: "https://cdn.botpress.cloud/webchat/v0",
+      messagingUrl: "https://messaging.botpress.cloud",
+      clientId: "YOUR_CLIENT_ID"
+    });
+  </script>
 </body>
 </html>
